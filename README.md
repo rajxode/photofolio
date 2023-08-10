@@ -26,4 +26,6 @@ This code has following dependencies:
   <li>Reactjs</li>
   <li>firebase (database)</li>
   <li>react-toastify (notification)</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
 </ul>
