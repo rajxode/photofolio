@@ -1,6 +1,7 @@
 <h1>Photofolio Application</h1>
 This is an online photo album project from coding ninjas, where an user can create his/her album and add pictures to it.
 
+<a href="https://photofolio-rajxode.netlify.app/">Go Live on app</a>
 
 <h2>Installation</h2>
 To run this code on your machine
