@@ -5,9 +5,96 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient( circle 811px at 17.3% 40.2%,  rgba(16,12,37,0.91) 33.4%, rgba(14,1,81,0.85) 90% );
+  background-attachment:fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* common style for all the heading tags  */
+h1{
+  color:#649dab;
+  font-family: cursive;
+}
+
+h1:hover{
+  color:#12343b;
+}
+
+/* common styles for all the buttons within the page */
+button{
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgba(0,0,0,.24);
+}
+
+
+/* common styles for all the inputbox inside the page */
+input{
+  border-radius: 2rem;
+  border: none;
+  padding-left: 15px;
+  font-weight: bold;
+  height: 30px;
+  background-color: #e1c3c8;
+}
+
+
+/* removing border from inputbox */
+input:focus{
+  outline: none;
+}
+
+
+/* for the form Container of album and image */
+.formContainer{
+  text-align: center;
+  height: 150px;
+  width: 100%;
+  background-image: radial-gradient( circle 858.6px at 10% 20%, rgb(127 80 101) 0%, rgb(143 122 157) 90% );
+  border-radius: 10px;
+  box-shadow: -2px 2px 7px 0px grey;
+}
+
+/* lightbox styles */
+
+/* black background */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* container */
+.lightbox-container {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* close button of lightbox to hide image */
+.close-button{
+  position: absolute;
+  top: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  left: 46%;
+}
+
+/* image inside the lightbox */
+.lightbox-image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
 }
